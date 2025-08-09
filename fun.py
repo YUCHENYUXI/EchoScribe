@@ -8,7 +8,7 @@ dvc = "cuda:0"  # 使用CUDA还是CPU
 
 # Use a highly accurate Paraformer model from ModelScope.
 model = AutoModel(model="iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-pytorch",
-                  device=dvc)
+                  device=dvc,disable_update=True)
 
 # --- NEW ---: 定义日志文件名
 # 创建一个带当前时间戳的文件名，例如: asr_log_2025-08-04_21-45-30.txt
