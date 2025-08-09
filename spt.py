@@ -17,7 +17,7 @@ def split_audio_with_overlap(input_file, output_dir, num_chunks=3, overlap_sec=2
         os.makedirs(output_dir)
         print(f"创建目录: {output_dir}")
 
-    print(f"正在加载音频文件: {input_file}")
+    print(f"正在加载文件: {input_file}")
     # pydub可以自动处理多种格式，背后使用ffmpeg
     audio = AudioSegment.from_file(input_file)
     total_duration_ms = len(audio)

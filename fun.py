@@ -14,7 +14,7 @@ model = AutoModel(model="iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vo
 # 创建一个带当前时间戳的文件名，例如: asr_log_2025-08-04_21-45-30.txt
 timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 log_filename = f"asr_log_{timestamp}.txt"
-clean_transcript_filename = "final_transcript.txt" # --- NEW ---: 干净的最终结果文件名
+clean_transcript_filename = log_filename+"final_transcript.txt" # --- NEW ---: 干净的最终结果文件名
 
 # 指向包含音频块的目录
 input_dir = "./audio_chunks/"
