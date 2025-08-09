@@ -1,7 +1,8 @@
 # EchoScribe
+TODO：更多视频格式，GUI/Web界面，去WSL，更换更准后端
 
 **EchoScribe** 是一个音频转录 Python 工具。  
-开发的原始目的旨在将OBS studio录制的mkv会议纪要转为文本，即信息模态转换。同时基于**有叠分割-ASR-LLM总结**功能解决了GPU显存不足的问题。
+开发的原始目的旨在将OBS studio录制的mkv会议纪要转为文本，即信息模态转换。同时基于**有叠分割-ASR-LLM总结**功能解决了GPU显存不足的问题。基于WIN+WSL生态。
 
 基于LLM开发。
 
